@@ -1,32 +1,41 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <keep-alive exclude="GoodsMess,CategoryPage">
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import JWTDecode from 'jwt-decode'
+export default {
+  mounted() {
+    // 判断是否有token
+    if (localStorage.eleToken) {
+      // 将token解析
+      const decoded = JWTDecode(localStorage.eleToken);
+      this.$store.dispatch("setAuthenticated", decoded);
+      this.$store.dispatch("setUser", decoded);
     }
-  }
+  },
+};
+// 根据屏幕大小设置字体大小
+document.addEventListener("DOMContentLoaded", () => {
+  let fontSize = window.innerWidth / 10;
+  fontSize = fontSize > 50 ? 50 : fontSize;
+  const html = document.querySelector("html");
+  html.style.fontSize = fontSize + "px";
+});
+</script>
+
+<style lang="less">
+html,
+body,
+#app {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>

@@ -1,0 +1,68 @@
+{
+	"data": {
+		"categoryList": [{
+			"name": "特别限量",
+			"img": "/dotashop/img/category-2.jpg"
+		}, {
+			"name": "游戏手办",
+			"img": "/dotashop/img/category-1.jpg"
+		}, {
+			"name": "毛绒玩具",
+			"img": "/dotashop/img/category-3.jpg"
+		}, {
+			"name": "生活用品",
+			"img": "/dotashop/img/category-4.jpg"
+		}],
+		"swipeImgList": [{
+			"img": "/dotashop/img/carousel-1.jpg",
+			"name": "炸弹人"
+		}, {
+			"img": "/dotashop/img/carousel-2.jpg",
+			"name": "伐木机"
+		}],
+		"carouselList": [{
+			"img": "/dotashop/img/swiper-1.jpg",
+			"name": "炸弹人"
+		},{
+			"img": "/dotashop/img/swiper-2.jpg",
+			"name": "衣服"
+		},{
+			"img": "/dotashop/img/swiper-1.jpg",
+			"name": "炸弹人"
+		}, {
+			"img": "/dotashop/img/swiper-2.jpg",
+			"name": "衣服"
+		},{
+			"img": "/dotashop/img/swiper-1.jpg",
+			"name": "炸弹人"
+		},{
+			"img": "/dotashop/img/swiper-2.jpg",
+			"name": "衣服"
+		}],
+		"nowgoodsList": [{
+			"img": "/dotashop/img/good-1.jpg",
+			"name": "扭蛋手办",
+			"price": 1
+		}, {
+			"img": "/dotashop/img/good-2.jpg",
+			"name": "扭蛋",
+			"price": 2
+		}, {
+			"img": "/dotashop/img/good-3.jpg",
+			"name": "TI玩偶",
+			"price": 3
+		}, {
+			"img": "/dotashop/img/good-4.jpg",
+			"name": "雨伞",
+			"price": 4
+		}, {
+			"img": "/dotashop/img/good-5.jpg",
+			"name": "女王",
+			"price": 5
+		}, {
+			"img": "/dotashop/img/good-6.jpg",
+			"name": "龙骑",
+			"price": 6
+		}]
+	}
+}
