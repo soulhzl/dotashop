@@ -1,13 +1,13 @@
-const SERVERURL = "http://127.0.0.1:7001/"
+const SERVERURL = "http://127.0.0.1:8022/"
 const LOCALURL = "http://1.15.65.175:8022/"
 // 服务器
 const URL = {
-	lorUser: LOCALURL + 'user/loruser',
+	lorUser: SERVERURL + 'user/loruser',
 	home: '/dotashop/stable.json',
-	getGoodsInfo: LOCALURL + 'goods/getgoodsinfo',
-	getCategoryGoods: LOCALURL + 'goods/getcategorygoods',
-	getSearchList: LOCALURL + 'goods/getsearchList',
-	saveAddress: LOCALURL + 'user/saveaddress',
-	getAddressList: LOCALURL + 'user/getaddresslist',
+	getGoodsInfo: SERVERURL + 'goods/getgoodsinfo',
+	getCategoryGoods: SERVERURL + 'goods/getcategorygoods',
+	getSearchList: SERVERURL + 'goods/getsearchList',
+	saveAddress: SERVERURL + 'user/saveaddress',
+	getAddressList: SERVERURL + 'user/getaddresslist',
 }
 module.exports = URL
